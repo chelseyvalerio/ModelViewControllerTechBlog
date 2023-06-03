@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS blogAuth_db;
+CREATE DATABASE blogAuth_db;

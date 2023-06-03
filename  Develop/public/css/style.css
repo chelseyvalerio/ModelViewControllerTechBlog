@@ -1,0 +1,18 @@
+.header {
+    color: blue;
+    flex-wrap: wrap;
+    box-shadow: 5px black;
+}
+
+button {
+    color: lightskyblue;
+    text-align: center;
+    box-shadow: 5px black;
+    justify-content: center;
+}
+
+main {
+    color: slategray;
+    text-align: center;
+}
+

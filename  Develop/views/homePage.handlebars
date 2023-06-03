@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Database</title>
+</head>
+<body>
+<div class="nav">
+<button class="btn btn-primary" id="home"> <a href="./homePage.handlebars">Home</a></button>
+<button class="btn btn-primary" id="dashboard"> <a href="./dashboard.handlebars">Dashboard</a></button>
+<button class="btn btn-primary" id="logouthome"> <a href="./login.handlebars">Logout</a></button>
+</div>
+
+  
+    <!-- Loop over each object in the projects array -->
+{{#each existingBlog as |existingBlog| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <a href="/project/{{existingBlog.title}}">{{existingBlog.title}}</a>
+    </h2>
+    <h3>
+      {{existingBlog.description}}
+    </h3>
+    <p>Created by {{existingBlog.user.name}} on {{format_date existingBlog.createdAt}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{existingBlog.content}}
+    </p>
+  </div>
+</div>
+{{/each}}
+
+<script src="../controllers/api/existBlogsRoutes.js"></script>
+</body>
+</html>		
+    
+    
