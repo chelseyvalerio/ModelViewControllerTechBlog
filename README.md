@@ -44,25 +44,33 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Instillations
 
-Express.js
-dotenv
-ExpressHandleBars
-MySql2
-Sequalize
-Nodemon
-eslint
-bcrypt
+1. Express.js
+2. dotenv
+3. ExpressHandleBars
+4. MySql2
+5. Sequalize
+6. Nodemon
+7. eslint
+8. bcrypt
 
 ## App Run Commands
 
-log into mysql, source schema, npm i, npm run seeds, npm run dev
+1. log into mysql
+2. source schema
+3. npm i
+4. npm run seeds
+5. npm run dev
 
 ## App in Action
 
+![homepage of application](./Assets/homepage.png)
+![loginpage of application](./Assets/loginsignuppage.png)
+![user dashboard after authenticated login](./Assets/userdashboard.png)
+
 ## Links
 
-gitHub Repo
-Deployed Application
+GitHub Repo: https://github.com/chelseyvalerio/ModelViewControllerTechBlog
+Deployed Application:
 
 ## Contact
 
