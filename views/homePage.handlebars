@@ -8,10 +8,10 @@
 </head>
 <body>
 <div class="nav">
-<button class="btn btn-primary" id="home"> <a href="./homePage.handlebars">Home</a></button>
-<button class="btn btn-primary" id="dashboard"> <a href="./dashboard.handlebars">Dashboard</a></button>
-<button class="btn btn-primary" id="logouthome"> <a href="./login.handlebars">Logout</a></button>
-</div>
+{{!-- <button class="btn btn-primary" id="home"> <a href="./homePage.handlebars">Home</a></button> --}}
+{{!-- <button class="btn btn-primary" id="dashboard"> <a href="./dashboard.handlebars">Dashboard</a></button>
+<button class="btn btn-primary" id="loginhome"> <a href="./login.handlebars">Login</a></button>
+</div> --}}
 
   
     <!-- Loop over each object in the projects array -->
@@ -19,7 +19,7 @@
 <div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
-      <a href="/project/{{existingBlog.title}}">{{existingBlog.title}}</a>
+      <a href="/blog/{{existingBlog.title}}">{{existingBlog.title}}</a>
     </h2>
     <h3>
       {{existingBlog.description}}

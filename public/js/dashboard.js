@@ -5,7 +5,7 @@ const submitPostHandler = async (event) => {
   const title = document.querySelector(".title").value.trim();
   const description = document.querySelector(".description").value.trim();
   const content = document.querySelector(".content").value.trim();
-  const creator = document.querySelector(".creator").value.trim();
+  const creator = document.querySelector(".author").value.trim();
   const author_id = document.querySelector(".logged-in-user-id").innerHTML; 
   if (!author_id) {
       alert(
