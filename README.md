@@ -70,7 +70,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ## Links
 
 GitHub Repo: https://github.com/chelseyvalerio/ModelViewControllerTechBlog
-Deployed Application: https://chelseyvalerio.github.io/ModelViewControllerTechBlog/
+Deployed Application: https://whispering-savannah-68673.herokuapp.com/
 
 ## Contact
 
