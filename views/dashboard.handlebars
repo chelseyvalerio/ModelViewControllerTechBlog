@@ -8,25 +8,25 @@
   <div class="col-md-6">
     <h3>Create a New Blog:</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-project-form" method="POST" action="/">
       <div class="form-group">
         <label for="title">Blog Title:</label>
         <input class="form-input" type="text" id="title" name="title" />
       </div>
-      <div class="form-group">
+      {{!-- <div class="form-group">
         <label for="description">Description:</label>
         <input class="form-input" type="text" id="description" name="description" />
-      </div>
+      </div> --}}
       <div class="form-group">
         <label for="content">Content:</label>
         <textarea class="form-input" id="content" name="content"></textarea>
       </div>
        <div class="form-group">
-        <label for="creator">Author:</label>
-        <textarea class="form-input" id="author" name="author"></textarea>
-      </div>
+  <label for="author">Author:</label>
+  <input class="form-input" type="text" id="author" name="author" />
+</div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="btn btn-primary" onclick="submitPostHandler(event)">Create</button>
       </div>
     </form>
   </div>
@@ -38,16 +38,16 @@
       <a href="/project/{{existingBlog.title}}">{{existingBlog.title}}</a>
     </h2>
     <h3>
-      {{existingBlog.description}}
+      {{existingBlog.content}}
     </h3>
-    <p>Created by {{existingBlog.user.name}} on {{format_date existingBlog.createdAt}}</p>
+    <p>Created on {{format_date existingBlog.createdAt}}</p>
   </div>
-  <div class="col-md-7">
+  {{!-- <div class="col-md-7">
     <p>
-      {{existingBlog.description}}
+      {{existingBlog.content}}
     </p>
-  </div>
+  </div> --}}
 </div>
 {{/each}}
 
-<script src="../public/js/dashboard.js"></script>
+<script src="/js/dashboard.js"></script>
